@@ -1,8 +1,20 @@
 {
-  "name": "vite_react_shadcn_ts",
-  "private": true,
+  "name": "y",
   "version": "0.0.0",
+  "private": true,
+  "description": "**URL**: https://lovable.dev/projects/3b3af1c4-93ae-4647-b18f-fcc86a208653",
+  "homepage": "https://github.com/Rishwik6/My-Portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/Rishwik6/My-Portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rishwik6/My-Portfolio.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

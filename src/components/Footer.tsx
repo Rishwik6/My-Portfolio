@@ -33,7 +33,7 @@ const Footer = () => {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://linkedin.com/in/rishwik-jujjuvarapu"
+                href="https://www.linkedin.com/in/rishwikj/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -42,7 +42,7 @@ const Footer = () => {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:rishwik@example.com" aria-label="Email">
+              <a href="https://mail.google.com/mail/u/0/#inbox/FMfcgzQcqQxHxbBzsbnnfKMNRjfJsHhN?compose=new" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
