@@ -49,8 +49,8 @@ const Home = () => {
           >
             I build scalable web applications using{" "}
             <span className="text-primary font-semibold">React</span>,{" "}
-            <span className="text-primary font-semibold">.NET Core</span>, and{" "}
-            <span className="text-primary font-semibold">C#</span>
+            <span className="text-primary font-semibold">Node.js</span>, and{" "}
+            <span className="text-primary font-semibold">Express.js</span>
           </motion.p>
 
           <motion.div

@@ -8,7 +8,7 @@ const Experience = () => {
       role: "Trainee Software Engineer",
       period: "April 2025 – Present",
       description:
-        "Working on full-stack enterprise applications using .NET Core and React. Contributing to microservices architecture and implementing RESTful APIs. Collaborating with cross-functional teams in Agile environment.",
+        "Working on full-stack enterprise applications using Node.js, Express.js and React. Contributing to microservices architecture and implementing RESTful APIs. Collaborating with cross-functional teams in Agile environment.",
       achievements: [
         "Developed reusable React components reducing development time by 30%",
         "Implemented API caching strategies improving response times by 45%",

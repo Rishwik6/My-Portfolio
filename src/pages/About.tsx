@@ -5,8 +5,8 @@ import { Code2, Database, Globe, Layers } from "lucide-react";
 const About = () => {
   const skills = {
     "Frontend": ["React", "TypeScript", "Tailwind CSS", "Redux Toolkit", "Framer Motion"],
-    "Backend": [".NET Core", "C#", "Node.js", "Express", "REST APIs"],
-    "Database": ["SQL Server", "PostgreSQL", "MongoDB"],
+    "Backend": ["Node.js", "Express.js", "REST APIs", "GraphQL", "Microservices"],
+    "Database": ["MongoDB", "PostgreSQL", "Redis", "SQL Server"],
     "Tools": ["Git", "AWS EC2", "Docker", "Agile/Scrum"],
   };
 
@@ -47,7 +47,7 @@ const About = () => {
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Results-driven Full Stack Developer with 2+ years of experience in building
-                responsive web applications using React, .NET Core, and C#.
+                responsive web applications using React, Node.js, and Express.js.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Skilled in creating scalable, efficient, and user-centric solutions with strong
