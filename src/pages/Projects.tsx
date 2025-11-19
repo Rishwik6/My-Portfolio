@@ -7,7 +7,7 @@ const Projects = () => {
       title: "TiDiuM – Test Data Management Platform",
       description:
         "Enterprise platform for managing test data with lazy loading optimization and API caching strategies. Improved page load performance by 40% through efficient data management.",
-      tech: ["React", ".NET Core", "SQL Server", "Redis", "Lazy Loading"],
+      tech: ["React", "Node.js", "Express.js", "MongoDB", "Redis"],
       liveUrl: "#",
       githubUrl: "#",
     },
@@ -23,14 +23,14 @@ const Projects = () => {
       title: "PEP Internal Portal",
       description:
         "Comprehensive employee management system handling HR operations, payroll processing, and employee records. Streamlined workflows for 500+ employees.",
-      tech: ["ASP.NET", "C#", "SQL Server", "Entity Framework", "Bootstrap"],
+      tech: ["Node.js", "Express.js", "MongoDB", "JWT Auth", "Bootstrap"],
       liveUrl: "#",
     },
     {
       title: "Employee Management Dashboard",
       description:
         "Modern dashboard application for employee data management with Redux state management and AWS EC2 deployment. Features real-time updates and analytics.",
-      tech: ["React", ".NET Core", "Redux Toolkit", "AWS EC2", "Chart.js"],
+      tech: ["React", "Node.js", "Express.js", "Redux Toolkit", "AWS EC2"],
       liveUrl: "#",
       githubUrl: "#",
     },

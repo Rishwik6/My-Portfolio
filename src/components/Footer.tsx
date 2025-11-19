@@ -16,7 +16,7 @@ const Footer = () => {
               Rishwik Jujjuvarapu
             </h3>
             <p className="text-muted-foreground text-sm">
-              Full Stack Developer | React · .NET · C#
+              Full Stack Developer | React · Node.js · Express.js
             </p>
           </div>
 
