@@ -21,7 +21,8 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const { error } = await supabase.from("contact_messages").insert([
+      // 1. Save to Supabase
+      const { error: supabaseError } = await supabase.from("contact_messages").insert([
         {
           name: formData.name,
           email: formData.email,
@@ -29,7 +30,26 @@ const Contact = () => {
         },
       ]);
 
-      if (error) throw error;
+      if (supabaseError) throw supabaseError;
+
+      // 2. Send Email via FormSubmit.co
+      const response = await fetch("https://formsubmit.co/ajax/rishwikj@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `New Contact Message from ${formData.name}`,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
 
       toast({
         title: "Message Sent!",
@@ -38,6 +58,7 @@ const Contact = () => {
 
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
+      console.error("Error submitting form:", error);
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",
