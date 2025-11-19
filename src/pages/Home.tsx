@@ -66,7 +66,7 @@ const Home = () => {
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="/resume.pdf" download>
+              <a href="/Rishwik-Resume.pdf" download="Rishwik Resume.pdf">
                 <Code className="mr-2 h-5 w-5" />
                 Download Resume
               </a>
