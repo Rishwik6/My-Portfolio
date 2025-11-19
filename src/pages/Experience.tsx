@@ -38,34 +38,34 @@ const Experience = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
-          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 gradient-text">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 md:mb-6 gradient-text px-4">
             Experience
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8" />
+          <div className="w-20 md:w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6 md:mb-8" />
         </motion.div>
 
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-4xl mx-auto space-y-6 md:space-y-8">
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.company}
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="glass-card p-8 rounded-lg hover:glow-border transition-all duration-300 relative"
+              className="glass-card p-6 md:p-8 rounded-lg hover:glow-border transition-all duration-300 relative"
             >
-              <div className="absolute left-0 top-8 w-1 h-20 bg-gradient-to-b from-primary to-accent -ml-4 rounded-full" />
+              <div className="hidden md:block absolute left-0 top-8 w-1 h-20 bg-gradient-to-b from-primary to-accent -ml-4 rounded-full" />
 
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
-                  <div className="flex items-center gap-3 mb-2">
-                    <Briefcase className="h-5 w-5 text-primary" />
-                    <h2 className="text-2xl font-heading font-bold text-primary">
+                  <div className="flex items-center gap-2 md:gap-3 mb-2">
+                    <Briefcase className="h-4 w-4 md:h-5 md:w-5 text-primary" />
+                    <h2 className="text-xl md:text-2xl font-heading font-bold text-primary">
                       {exp.company}
                     </h2>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{exp.role}</h3>
+                  <h3 className="text-lg md:text-xl font-semibold mb-2">{exp.role}</h3>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Calendar className="h-4 w-4" />

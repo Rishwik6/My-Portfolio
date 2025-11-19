@@ -64,26 +64,26 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
-          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 gradient-text">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 md:mb-6 gradient-text px-4">
             Get In Touch
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8" />
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <div className="w-20 md:w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6 md:mb-8" />
+          <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             Have a project in mind or want to collaborate? Feel free to reach out!
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-12 max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-8"
+            className="space-y-6 md:space-y-8"
           >
-            <div className="glass-card p-8 rounded-lg">
-              <h2 className="text-2xl font-heading font-bold mb-6 text-primary">
+            <div className="glass-card p-6 md:p-8 rounded-lg">
+              <h2 className="text-xl md:text-2xl font-heading font-bold mb-4 md:mb-6 text-primary">
                 Contact Information
               </h2>
 
@@ -130,7 +130,7 @@ const Contact = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <form onSubmit={handleSubmit} className="glass-card p-8 rounded-lg space-y-6">
+            <form onSubmit={handleSubmit} className="glass-card p-6 md:p-8 rounded-lg space-y-5 md:space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Name
