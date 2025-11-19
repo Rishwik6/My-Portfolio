@@ -12,12 +12,12 @@ const Education = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
-          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 gradient-text">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 md:mb-6 gradient-text px-4">
             Education
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8" />
+          <div className="w-20 md:w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6 md:mb-8" />
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
@@ -25,17 +25,17 @@ const Education = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="glass-card p-8 rounded-lg hover:glow-border transition-all duration-300"
+            className="glass-card p-6 md:p-8 rounded-lg hover:glow-border transition-all duration-300"
           >
-            <div className="flex items-start gap-6 mb-6">
-              <div className="p-4 bg-primary/10 rounded-lg">
-                <GraduationCap className="h-8 w-8 text-primary" />
+            <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6 mb-6">
+              <div className="p-3 md:p-4 bg-primary/10 rounded-lg">
+                <GraduationCap className="h-6 w-6 md:h-8 md:w-8 text-primary" />
               </div>
               <div className="flex-1">
-                <h2 className="text-2xl font-heading font-bold mb-2 text-primary">
+                <h2 className="text-xl md:text-2xl font-heading font-bold mb-2 text-primary">
                   Bachelor of Technology
                 </h2>
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-lg md:text-xl font-semibold mb-2">
                   Electronics and Communication Engineering
                 </h3>
                 <p className="text-muted-foreground mb-2">

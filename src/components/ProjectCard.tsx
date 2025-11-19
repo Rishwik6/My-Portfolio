@@ -20,9 +20,9 @@ const ProjectCard = ({ title, description, tech, liveUrl, githubUrl, index }: Pr
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
       whileHover={{ scale: 1.02 }}
-      className="glass-card p-6 rounded-lg hover:glow-border transition-all duration-300"
+      className="glass-card p-5 md:p-6 rounded-lg hover:glow-border transition-all duration-300"
     >
-      <h3 className="text-2xl font-heading font-bold mb-3 gradient-text">{title}</h3>
+      <h3 className="text-xl md:text-2xl font-heading font-bold mb-2 md:mb-3 gradient-text">{title}</h3>
       <p className="text-muted-foreground mb-4 leading-relaxed">{description}</p>
 
       <div className="flex flex-wrap gap-2 mb-6">

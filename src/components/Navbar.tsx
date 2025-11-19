@@ -34,9 +34,9 @@ const Navbar = () => {
         scrolled ? "glass-card glow-border" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3 md:py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-heading font-bold gradient-text">
+          <Link to="/" className="text-xl md:text-2xl font-heading font-bold gradient-text">
             RJ
           </Link>
 
@@ -77,21 +77,21 @@ const Navbar = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden mt-4 space-y-4"
+              className="md:hidden mt-4 pb-2 space-y-2"
             >
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block font-body py-2 transition-colors hover:text-primary ${
+                  className={`block font-body py-3 px-2 transition-colors hover:text-primary ${
                     location.pathname === link.path ? "text-primary" : "text-muted-foreground"
                   }`}
                 >
                   {link.name}
                 </Link>
               ))}
-              <Button variant="default" size="sm" className="w-full" asChild>
+              <Button variant="default" size="lg" className="w-full mt-2" asChild>
                 <a href="/Rishwik-Resume.pdf" download="Rishwik Resume.pdf">
                   Download Resume
                 </a>
