@@ -54,7 +54,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Button variant="default" size="sm" asChild>
-              <a href="/resume.pdf" download>
+              <a href="/Rishwik-Resume.pdf" download="Rishwik Resume.pdf">
                 Resume
               </a>
             </Button>
@@ -92,7 +92,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <Button variant="default" size="sm" className="w-full" asChild>
-                <a href="/resume.pdf" download>
+                <a href="/Rishwik-Resume.pdf" download="Rishwik Resume.pdf">
                   Download Resume
                 </a>
               </Button>
